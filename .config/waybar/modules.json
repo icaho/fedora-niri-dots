@@ -1,10 +1,8 @@
 {
-  // Workspaces
   "niri/workspaces": {
     "on-click": "activate"
   },
 
-  // Taskbar
   "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 18,
@@ -21,7 +19,6 @@
     }
   },
 
-  // niri Window
   "niri/window": {
     "format": "{}",
     "rewrite": {
@@ -34,18 +31,15 @@
     "separate-outputs": true
   },
 
-  // Empty
   "custom/empty": {
     "format": ""
   },
 
-    // Tools
   "custom/tools": {
     "format": "",
     "tooltip-format": "Tools"
   },
 
-  // Updates Count
   "custom/updates": {
       "format": "{} {icon}",
       "return-type": "json",
@@ -57,28 +51,24 @@
       "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
   },
 
-  // rofi Application Launcher
   "custom/appmenu": {
     "format": "   ",
     "on-click": "sleep 0.2;rofi -show drun -replace",
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
 
-  // rofi Application Launcher
   "custom/appmenuicon": {
     "format": "",
     "on-click": "sleep 0.2;rofi -show drun -replace",
     "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
   },
 
-  // Power Menu
   "custom/exit": {
     "format": " 󰐥 ",
     "on-click": "~/.config/waybar/scripts/power-menu.sh",
     "tooltip-format": "Power Menu"
   },
 
-  // Keyboard State
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
@@ -89,7 +79,6 @@
     }
   },
 
-  // System tray
   "tray": {
     "icon-size": 16,
     "spacing": 10
@@ -99,10 +88,9 @@
     "format": "/ K {short}"
   },
 
-  // Battery
   "battery": {
     "states": {
-      // "good": 95,
+      "good": 95,
       "warning": 30,
       "critical": 15
     },
@@ -112,14 +100,12 @@
     "format-charging": "  {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
+    "format-good": "", 
+    "format-full": "",
     "format-icons": [" ", " ", " ", " ", " "]
   },
 
-  // Pulseaudio
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
     "format": "{icon}  {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
@@ -130,7 +116,6 @@
     "on-click": "pavucontrol"
   },
 
-  // Bluetooth
   "bluetooth": {
     "format": " {status}",
     "format-disabled": "",
@@ -140,14 +125,12 @@
     "format-no-controller": ""
   },
 
-  // Other
   "user": {
     "format": "{user}",
     "interval": 60,
     "icon": false
   },
 
-  // backlight:
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": [
