@@ -1,0 +1,14 @@
+    window-rule {
+        geometry-corner-radius 8 // Set every window radius to 20
+        clip-to-geometry true
+    }
+
+    window-rule {
+        match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+        open-floating true // Always float Firefox PiP windows
+    }
+
+    window-rule {
+        match app-id=r#"vlc$"#
+        open-floating true
+    }

@@ -1,0 +1,15 @@
+// ────────────── Startup Applications ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+
+    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
+    // edit for wallpaper
+    spawn-sh-at-startup "swaybg -i image.png"
+    // uncomment and edit to use awww instead of swaybg
+    //spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
+    // change username
+    //spawn-sh-at-startup "awww img \"/home/$USER/Pictures/Wallpapers/openSuSE/511049.jpg\"" // Set wallpaper
+    spawn-sh-at-startup "waybar" // Launch waybar
+    spawn-sh-at-startup "mako" // Launch Mako Notification Daemon
+    spawn-at-startup "swayidle" "-w" "timeout" "300" "swaylock-fancy -g -p" "before-sleep" "swaylock-fancy -g -p"
+    // uncomment for kdeconnect
+    //spawn-at-startup "kdeconnect-indicator" // Start KDE Connect in tray

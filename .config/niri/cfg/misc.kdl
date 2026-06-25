@@ -1,0 +1,21 @@
+    prefer-no-csd // Disable program decorations
+    // change username
+    screenshot-path "/home/$USER/Pictures/Screenshots/Screenshot-%Y-%m-%d-%H-%M-%S.png" // Enable screenshot saving
+
+    environment {
+        ELECTRON_OZONE_PLATFORM_HINT "auto"
+        QT_QPA_PLATFORM "wayland"
+        QT_QPA_PLATFORMTHEME "qt6ct"
+        QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+        XDG_SESSION_TYPE "wayland"
+        XDG_CURRENT_DESKTOP "niri"
+    }
+
+    debug {
+        // Allows notification actions and window activation from Noctalia.
+        honor-xdg-activation-with-invalid-serial
+    }
+
+    hotkey-overlay {
+       skip-at-startup
+    }
