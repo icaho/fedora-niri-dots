@@ -103,6 +103,12 @@ call plug#begin('~/.config/nvim/plugged')
   " Snazzy colorscheme
   Plug 'connorholyday/vim-snazzy'
 
+  " Everforest colorscheme
+  Plug 'sainnhe/everforest'
+
+  " Tokyonight colorscheme
+  Plug 'ghifarit53/tokyonight-vim'
+
   " Spaceduck colorscheme
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
@@ -157,14 +163,14 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme snazzy
+colorscheme tokyonight
 
 " let buffers be clickable
 let g:lightline#bufferline#clickable=1
 let g:lightline#bfferline#shorten_path=1
 let g:lightline#bufferline#min_buffer_count=1
 let g:lightline = {
-\ 'colorscheme': 'snazzy',
+\ 'colorscheme': 'tokyonight',
 \ }
 
 

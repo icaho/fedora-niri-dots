@@ -18,9 +18,3 @@ input {
     workspace-auto-back-and-forth // Enable workspace back & forth switching
 }
 
-// install custom cursors and set here
-//cursor {
-    xcursor-theme "Bibata-Modern-Ice"
-    xcursor-size 24
-}
-
